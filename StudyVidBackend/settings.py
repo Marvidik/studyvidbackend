@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     'users',
     'posts',
+    'rest_framework',
+    'social_django',
 ]
 
 MIDDLEWARE = [
@@ -123,3 +125,15 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+
+AUTHENTICATION_BACKENDS = (
+    'social_core.backends.google.GoogleOAuth2',  # For Google
+    'social_core.backends.facebook.FacebookOAuth2',  # For Facebook
+    # Add other backends as needed
+    'django.contrib.auth.backends.ModelBackend',
+)
+
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '<your-client-id>'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '<your-client-secret>'
