@@ -135,5 +135,5 @@ AUTHENTICATION_BACKENDS = (
 )
 
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '<your-client-id>'
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '<your-client-secret>'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '<get the client id>'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '<get the -client-secret>'
