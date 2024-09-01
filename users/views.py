@@ -11,3 +11,8 @@ def signup(request):
 def login(request):
 
     pass 
+
+def social_auth(request):
+
+
+    pass
