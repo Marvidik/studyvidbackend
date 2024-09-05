@@ -47,3 +47,6 @@ def social_auth(request):
 
 
     pass
+
+def profile(request):
+    pass
